@@ -14,7 +14,7 @@ jobs:
           composer dump-autoload
       - name: Configuration application
         run: |
-          cp .env.sai .env
+          cp .env.production .env
           php artisan config:cache
           php artisan config:clear
           php artisan cache:clear
